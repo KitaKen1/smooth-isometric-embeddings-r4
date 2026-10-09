@@ -36,7 +36,7 @@ $$
 Each addition is supported on a coordinate disk. The phases are chosen so that
 
 $$
-\operatorname{Hess}_{\gamma^{j-1}}x_j(\partial_{y_j},\partial_{y_j})>0.
+\mathrm{Hess}_{\gamma^{j-1}}x_j(\partial_{y_j},\partial_{y_j})>0.
 $$
 
 The task is to realize each addition while preserving the embedding and the conditions needed for the next step.
@@ -46,7 +46,7 @@ The task is to realize each addition while preserving the embedding and the cond
 For the current embedding $F$, define
 
 $$
-P_p=\operatorname{span}(F_y(p),F_{yy}(p))^\perp.
+P_p=\mathrm{span}(F_y(p),F_{yy}(p))^\perp.
 $$
 
 The decomposition
@@ -54,7 +54,7 @@ The decomposition
 $$
 F_{yy}=\Gamma^x_{yy}F_x+\Gamma^y_{yy}F_y+B_{yy},
 \qquad
-\Gamma^x_{yy}=-\operatorname{Hess}_{\gamma(F)}x(\partial_y,\partial_y)\ne0
+\Gamma^x_{yy}=-\mathrm{Hess}_{\gamma(F)}x(\partial_y,\partial_y)\ne0
 $$
 
 shows that $P_p$ is a complement to $dF_p(T_pM)$. The leading derivative oscillation of a primitive correction lies in $P$.
