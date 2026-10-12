@@ -1,0 +1,16 @@
+.DS_Store
+**/.lake/
+**/__pycache__/
+*.aux
+*.log
+*.out
+*.toc
+!ComparatorLog*/**
+
+# Disposable verification products; permanent archives are included.
+comparator-receipt/
+build-receipt/
+replay-receipt/
+input-receipt/
+__pycache__/
+*.pyc

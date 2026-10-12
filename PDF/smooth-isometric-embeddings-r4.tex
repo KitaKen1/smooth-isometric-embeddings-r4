@@ -1,0 +1,561 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=27mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype,booktabs,tabularx,array,enumitem}
+\usepackage{xcolor,fancyhdr}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!40!black,citecolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\hypersetup{pdftitle={Smooth isometric embeddings of closed orientable surfaces in four-space},pdfauthor={},pdfsubject={Smooth isometric embeddings of closed orientable surfaces},pdfkeywords={isometric embedding, closed surface, four-space, transverse oscillation}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Sph}{\mathbb S}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\Hess}{\operatorname{Hess}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\avg}{\operatorname{avg}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\setlength{\parindent}{1.15em}
+\setlength{\parskip}{3pt}
+\setlist{itemsep=2pt,topsep=4pt,leftmargin=*}
+\emergencystretch=1.3em
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Smooth isometric embeddings in four-space}
+\fancyhead[R]{\small Public draft 1}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\title{\vspace{-1.3em}\LARGE\bfseries Smooth isometric embeddings of closed\newline orientable surfaces in four-space}
+\author{}
+\date{9 October 2026\quad\textbullet\quad Public draft 1}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+
+\section{Problem and notation}
+\label{sec:statement}
+
+All manifolds, maps, and metrics are smooth, meaning $C^\infty$.
+A closed manifold is compact and has no boundary. Write $\delta_N$ for the
+Euclidean metric on $\R^N$ and $\gamma(F)=F^*\delta_N$ for the metric induced
+by an immersion. Fix a smooth background metric $g_{\mathrm{bg}}$ and a finite
+atlas when taking norms. All $o(1)$ estimates below are uniform on the
+specified closed sets.
+
+\begin{theorem}[Smooth isometric embedding]
+\label{thm:main}
+Every closed orientable
+smooth surface $M$ with any smooth Riemannian metric $g$ admits a smooth
+embedding $f:M\hookrightarrow\R^4$ satisfying
+\begin{equation}
+ \langle \dd f_p(v),\dd f_p(w)\rangle=g_p(v,w)
+ \qquad(p\in M,\ v,w\in T_pM).
+ \label{eq:main}
+\end{equation}
+No curvature condition is imposed.
+\end{theorem}
+
+Equation~\eqref{eq:main} expresses preservation of the Riemannian metric
+on tangent spaces. The proof uses exact primitive realization,
+boundary propagation, and uniform spherical preparation in the forms
+stated below. We show that these operations preserve global injectivity.
+
+\section{Primitive metric corrections}
+\label{sec:inputs}
+
+We use exact primitive addition with the following local geometric data
+and boundary conditions. Our convention for the vector-valued second
+fundamental form is
+\begin{equation}
+ F_{ij}=\Gamma^k_{ij}F_k+B_F(\partial_i,\partial_j).
+ \label{eq:gauss-decomposition}
+\end{equation}
+
+\begin{definition}[Admissible primitive data]
+\label{def:admissible}
+Let $F:M\to\R^4$ be an immersion of a closed surface, with $B_F$ nowhere
+the zero tensor and with a smooth global unit normal $n$.
+Let $D$ be an open coordinate disk with smooth boundary $C_0$, and let
+$(x,y)$ be coordinates on a neighborhood of $\overline D$.
+Take a smooth function $a\ge0$ on $M$, positive exactly on $D$, and put
+$Y_0=\partial_y$. Require
+\begin{equation}
+ \Hess_{\gamma(F)}x(\partial_y,\partial_y)>0
+ \quad\text{on }\overline D.
+ \label{eq:hessian}
+\end{equation}
+Let $C_1,\ldots,C_m$ be later smooth embedded closed curves, with smooth
+nonzero vector fields $Y_i$ on their neighborhoods. The fields need not
+be tangent to the curves. Require:
+\begin{enumerate}[label=(\roman*)]
+\item The curves $C_0,\ldots,C_m$ are pairwise transverse and have no
+triple intersection.
+\item On $C_i\cap\overline D$, for $i>0$, the field $\partial_y$ is
+tangent to $C_i$ at only finitely many points.
+\item At $C_i\cap C_l\cap D$, for distinct $i,l>0$, both $\dd x(Y_i)$
+and $\dd x(Y_l)$ are nonzero.
+\item With $A_i=B_F(Y_i,Y_i)$ and
+\begin{equation}
+ Q_{il}=\left\langle B_F(Y_i,Y_l),\frac{A_i}{|A_i|}\right\rangle^2
+       +K_{\gamma(F)}|Y_i\wedge Y_l|_{\gamma(F)}^2,
+ \label{eq:Q}
+\end{equation}
+the following conditions hold for all indices $0,\ldots,m$:
+\begin{equation}
+ \begin{aligned}
+ A_i&\ne0,\qquad A_i/|A_i|\ne-n &&\text{on }C_i,\\
+ \langle A_i,n\rangle&>0,\qquad Q_{il}>0
+             &&\text{on }C_i\cap C_l\quad(i\ne l).
+ \end{aligned}
+ \label{eq:boundary}
+\end{equation}
+The crossing conditions are imposed in both orders.
+\end{enumerate}
+\end{definition}
+
+\subsection{Exact realization and uniform asymptotics}
+For these data, the velocity-loop construction uses the plane, projected
+velocity, and radius
+\begin{equation}
+ P_p=\Span(F_y(p),F_{yy}(p))^\perp,\qquad
+ v=\pi_PF_x,\qquad R_0=(|v|^2+a^2)^{1/2}.
+ \label{eq:plane}
+\end{equation}
+There is a smooth $2\pi$-periodic velocity $V(p,\theta)$, also smooth in
+the two-jet of a nearby map, such that
+\begin{equation}
+ V\in P,\qquad |V|=R_0>0,\qquad \avg_\theta V=v.
+ \label{eq:velocity}
+\end{equation}
+The difference $V-v$ extends smoothly by zero across $\partial D$.
+All loop choices, including the finite turn threshold used to preserve
+later boundary data, are fixed before choosing the small scale $z$.
+
+The exact primitive-realization theorem supplies, for every sufficiently
+small $z>0$, a smooth immersion $f_z$ such that
+\begin{equation}
+ \gamma(f_z)=h_*:=\gamma(F)+a^2\dd x^2.
+ \label{eq:exact}
+\end{equation}
+The primitive tensor is extended by zero. With $X=F_x-v+V$, the same
+theorem gives the uniform estimates on $\overline D$
+\begin{equation}
+ \begin{aligned}
+ (f_z)_x&=F_x-v+V(p,x/z)+o(1),& (f_z)_y&=F_y+o(1),\\
+ (f_z)_{yy}&=F_{yy}+o(1),& (f_z)_{xy}&=X_y+o(1),\\
+ z(f_z)_{xx}&=V_\theta+o(1).
+ \end{aligned}
+ \label{eq:asymptotics}
+\end{equation}
+Periodic arguments are evaluated at $\theta=x/z$; $X_y$ holds $\theta$
+fixed. On $M\setminus D$, one has $f_z\to F$ in $C^2$.
+
+These estimates hold for the \emph{final exact maps}: the final correction
+is $o(1)$ in $C^2$ and retains the displayed asymptotics. The realization
+theorem also supplies a uniform positive lower bound for the size of the
+second fundamental form.
+
+\subsection{The same maps preserve the later conditions}
+The boundary-propagation theorem uses the same exact maps with the loop
+threshold fixed first. For all sufficiently small $z$, it supplies a global
+preferred unit normal $n_z$, preserves the nowhere-zero second-form
+tensor, and establishes \eqref{eq:boundary} for all later indices.
+The adjustments at crossings and at the collar are adjustments of
+normal fields; they do not replace $f_z$. Consequently an additional
+condition that holds for all sufficiently small $z$ may be imposed on
+these same exact maps.
+
+\section{A geometric stability lemma}
+\label{sec:stability}
+
+The results in this section do not depend on the analytic construction.
+Let $F:M\hookrightarrow\R^N$ be an embedding of a closed manifold, and
+write $T_p=\dd F_p(T_pM)$.
+
+\begin{lemma}[Tubular coordinates for a complement]
+\label{lem:tubular}
+Let $E$ be a smooth subbundle of $M\times\R^N$ such that
+$\R^N=T_p\oplus E_p$ for every $p$. For some $r>0$, the map
+\[
+ \Psi:E_{<r}\longrightarrow\R^N,\qquad
+ \Psi(p,e)=F(p)+e,\qquad E_{<r}=\{(p,e)\in E:|e|<r\},
+\]
+is a diffeomorphism onto an open neighborhood $U$ of $F(M)$.
+The retraction $H=F\circ\pi\circ\Psi^{-1}:U\to F(M)$ satisfies
+\begin{equation}
+ DH_{F(p)}|_{E_p}=0,\qquad DH_{F(p)}\dd F_p=\dd F_p.
+ \label{eq:retraction}
+\end{equation}
+\end{lemma}
+\begin{proof}
+At the zero section, the natural tangent splitting gives
+$D\Psi_{(p,0)}(v,e)=\dd F_p(v)+e$, an isomorphism. The inverse
+function theorem and compactness imply that $\Psi$ is a local
+diffeomorphism on $E_{<r}$ for a sufficiently small uniform $r$.
+
+If no smaller radius gave injectivity, there would be unequal pairs
+$(p_j,e_j),(q_j,e'_j)$ with $|e_j|,|e'_j|\to0$ and
+$F(p_j)+e_j=F(q_j)+e'_j$. After taking subsequences, $p_j\to p$ and
+$q_j\to q$. Then $F(p)=F(q)$, so $p=q$. Both pairs converge in the
+total space to $(p,0)$, contradicting local injectivity there.
+Thus $\Psi$ is an injective local diffeomorphism after shrinking $r$.
+Its image is open and its inverse smooth. The identities follow by
+differentiating $H(F(p)+e)=F(p)$.
+\end{proof}
+
+\begin{lemma}[$C^1$ openness of compact embeddings]
+\label{lem:open}
+If smooth maps $G_j:M\to\R^N$ converge to $F$ in $C^1$, then $G_j$
+is an embedding for all sufficiently large $j$.
+\end{lemma}
+\begin{proof}
+Near any point choose coordinates $u$ and a linear map
+$L:\R^N\to\R^{\dim M}$ so that $D(LF)$ at the center is the identity.
+On a sufficiently small convex coordinate ball, its derivative differs
+from the identity by less than $1/4$. For all sufficiently large $j$,
+$D(LG_j)$ differs from the identity by less than $1/2$ there. Integrating
+the derivative error along a segment yields
+\[
+ |LG_j(u)-LG_j(v)|\ge\tfrac12|u-v|.
+\]
+This proves injectivity and immersion on that ball. Take finitely many
+such balls whose smaller concentric balls cover $M$. The union of the
+smaller-ball products is a neighborhood of the diagonal in $M\times M$.
+Its complement is compact and disjoint from the diagonal. If nonempty,
+$|F(p)-F(q)|$ has a positive minimum there; uniform convergence preserves
+this separation. Thus $G_j$ is an injective immersion on all of $M$.
+A continuous injection from compact $M$ into a Hausdorff space is a
+homeomorphism onto its image.
+\end{proof}
+
+\begin{proposition}[Embedding preservation under transverse oscillations]
+\label{prop:stability}
+Let $E$ be as in Lemma~\ref{lem:tubular}. Suppose smooth maps
+$f_j:M\to\R^N$ satisfy
+\begin{equation}
+ f_j\to F\text{ in }C^0,\qquad
+ \sup_j\|\dd f_j\|_{C^0}<\infty,\qquad
+ \dd f_j-\dd F=W_j+R_j,
+ \label{eq:abstract-assumptions}
+\end{equation}
+where $W_{j,p}(T_pM)\subset E_p$ and $\|R_j\|_{C^0}\to0$.
+Then $f_j$ is an embedding for all sufficiently large $j$.
+\end{proposition}
+\begin{proof}
+For large $j$, uniform convergence puts $f_j(M)$ in the fixed tubular
+neighborhood $U$. At each $p$, the chain rule gives
+\begin{align}
+ \dd(H\circ f_j)_p-\dd F_p
+ &=\bigl(DH_{f_j(p)}-DH_{F(p)}\bigr)\dd f_{j,p}
+   +DH_{F(p)}(\dd f_{j,p}-\dd F_p)\notag\\
+ &=\bigl(DH_{f_j(p)}-DH_{F(p)}\bigr)\dd f_{j,p}
+   +DH_{F(p)}R_{j,p}.
+ \label{eq:cancellation}
+\end{align}
+The term $W_j$ vanishes exactly under $DH_{F(p)}$.
+On a compact subneighborhood of $F(M)$, $DH$ is uniformly continuous.
+The first term therefore tends uniformly to zero by the boundedness
+of $\dd f_j$, and the second does so by the assumption on $R_j$.
+Also $H\circ f_j\to F$ uniformly, so the convergence is in $C^1$.
+Lemma~\ref{lem:open} makes $H\circ f_j$ an embedding for large $j$.
+
+If $f_j(p)=f_j(q)$, injectivity of the composition gives $p=q$.
+If $\dd f_{j,p}(v)=0$, injectivity of $\dd(H\circ f_j)_p$ gives $v=0$.
+Thus $f_j$ is an injective immersion, and compactness finishes the proof.
+\end{proof}
+
+\begin{remark}
+The same argument applies to a family indexed by $z\downarrow0$, with
+no continuity in $z$ required. The composition $H\circ f_z$ is only a
+test for injectivity; it does not replace the exact isometric map $f_z$.
+No metric identity is asserted for the composition.
+\end{remark}
+
+\section{Embedding preservation in one primitive addition}
+\label{sec:primitive}
+
+\begin{lemma}[Transversality of the oscillation plane]
+\label{lem:plane}
+Under \eqref{eq:hessian}, the planes $P$ in \eqref{eq:plane} form a
+smooth two-plane bundle near $\overline D$, and
+\begin{equation}
+ \R^4=\dd F_p(T_pM)\oplus P_p.
+ \label{eq:complement}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Since $x$ is a coordinate function,
+$\Hess_{\gamma(F)}x(\partial_y,\partial_y)=-\Gamma^x_{yy}$.
+Thus $\Gamma^x_{yy}\ne0$. By \eqref{eq:gauss-decomposition},
+\[
+ F_{yy}=\Gamma^x_{yy}F_x+\Gamma^y_{yy}F_y+B_{yy}.
+\]
+The tangential projections of $F_y$ and $F_{yy}$ are independent,
+so the ambient vectors are independent and their perpendicular
+complement is a smooth two-plane bundle. If $w\in P_p\cap\dd F_p(T_pM)$,
+then $\langle w,F_y\rangle=\langle w,F_{yy}\rangle=0$ and
+$\langle w,B_{yy}\rangle=0$. Hence
+$\Gamma^x_{yy}\langle w,F_x\rangle=0$, which implies $w=0$.
+Strict positivity on the compact set $\overline D$ persists on a
+neighborhood, so the assertions hold there as well.
+\end{proof}
+
+The associated determinant is
+\begin{equation}
+ \det\begin{pmatrix}
+ \langle F_y,F_x\rangle&\langle F_y,F_y\rangle\\
+ \langle F_{yy},F_x\rangle&\langle F_{yy},F_y\rangle
+ \end{pmatrix}
+ =-\Gamma^x_{yy}\det\gamma(F)>0.
+ \label{eq:determinant}
+\end{equation}
+This transversality will let us remove the leading oscillation by
+projection along a complement to the old tangent bundle.
+
+\begin{remark}[Nonvanishing of the velocity radius]
+The Hessian condition alone does not imply $v\ne0$ everywhere.
+In $D$, $a>0$ gives $|v|^2+a^2>0$. On $\partial D$, the boundary
+condition gives $B_{yy}\ne0$ and projection yields
+$\pi_PB_{yy}=-\Gamma^x_{yy}v$. Projection from the normal plane to $P$
+is an isomorphism: its kernel would lie in
+$\Span(F_y,F_{yy})$ with zero tangential projection, and that projection
+is injective. Hence $v\ne0$ at the boundary and on a collar.
+Compactness supplies a uniform positive radius margin.
+\end{remark}
+
+\begin{lemma}[Extension of a local complement]
+\label{lem:extend}
+If $F$ is an embedding, there is a smooth global complement $E$ to
+$\dd F(TM)$ agreeing with $P$ near $\overline D$.
+\end{lemma}
+\begin{proof}
+Write $T=\dd F(TM)$ and $N=T^\perp$. On the neighborhood where $P$
+is defined, $\pi_N|_P:P\to N$ is a bundle isomorphism. Thus
+$P_p=\{A_pu+u:u\in N_p\}$ for a smooth bundle map $A:N\to T$.
+Multiply $A$ by a cutoff equal to one near $\overline D$ and supported
+in that neighborhood, and extend the product by zero to a global
+smooth bundle map $\overline A$. Its graph is the required $E$.
+Every such graph is transverse to $T$, regardless of its norm.
+\end{proof}
+
+\begin{lemma}[Uniform displacement]
+\label{lem:displacement}
+The exact maps in \eqref{eq:asymptotics} converge to $F$ in $C^0(M)$.
+\end{lemma}
+\begin{proof}
+Set $e_z=f_z-F$. Exterior convergence controls $e_z$ uniformly on
+$\partial D$, while \eqref{eq:asymptotics} gives
+$\|\partial_y e_z\|_{C^0(\overline D)}\to0$.
+For a point $(x_0,y_0)\in D$, take the connected interval containing
+$y_0$ in the vertical slice $\{y:(x_0,y)\in D\}$.
+It has an endpoint on $\partial D$ and length at most the finite
+$y$-range $L_D$ of the coordinate image of $\overline D$.
+Integrating to that endpoint gives
+\begin{equation}
+ \|e_z\|_{C^0(\overline D)}\le
+ \|e_z\|_{C^0(\partial D)}+
+ L_D\|\partial_y e_z\|_{C^0(\overline D)}\longrightarrow0.
+ \label{eq:displacement}
+\end{equation}
+Combine this with exterior convergence. Vertical convexity of the
+whole disk and continuous choices of endpoints are unnecessary.
+\end{proof}
+
+\begin{proposition}[Embedding-preserving primitive addition]
+\label{prop:primitive}
+For admissible primitive data, suppose that $F$ is an embedding.
+The exact primitive output $F_+$ can be chosen to be an embedding,
+retaining its target metric,
+nowhere-zero second-form tensor, preferred normal, and later boundary
+conditions. Its exterior $C^2$ error and global $C^0$ displacement
+can be made arbitrarily small.
+\end{proposition}
+\begin{proof}
+Fix the velocity loop, and let $f_z$ be its exact realizations. For the global
+complement from Lemma~\ref{lem:extend}, set
+\[
+ W_z=(V(p,x/z)-v(p))\,\dd x\quad\text{on }D,
+ \qquad W_z=0\quad\text{outside }D.
+\]
+For each fixed $z$, this is a smooth global one-form with values in $E$,
+by the smooth zero extension of $V-v$. The first-derivative asymptotics
+and exterior convergence give
+\[
+ \dd f_z-\dd F=W_z+R_z,\qquad \|R_z\|_{C^0(M)}\to0.
+\]
+For background-unit $u$, the exact metric identity gives
+$|\dd f_z(u)|^2=h_*(u,u)$. Since $h_*$ is fixed, the differentials
+are uniformly bounded. Lemma~\ref{lem:displacement} gives the remaining
+hypothesis of Proposition~\ref{prop:stability}, so $f_z$ is an embedding
+for all sufficiently small $z$.
+
+By the boundary-propagation theorem in Section~\ref{sec:inputs}, the other
+geometric conclusions hold for these same maps for every sufficiently small
+$z$. Choose $z$ below all the thresholds, also meeting the requested
+exterior error and displacement, and set $F_+=f_z$.
+\end{proof}
+
+\section{Embedded preparation and finite assembly}
+\label{sec:global}
+
+\begin{lemma}[Embedded spherical preparation]
+\label{lem:preparation}
+For a closed connected orientable surface, uniform spherical preparation
+and global metric preparation can be performed with the initial map
+$F^0$ an embedding, retaining the required geometric conditions and
+prescribed intermediate metrics.
+\end{lemma}
+\begin{proof}
+A closed connected orientable smooth surface is diffeomorphic to the
+boundary of a handlebody in $\R^3$. Compose such an embedding with
+inverse stereographic projection to obtain $I:M\hookrightarrow\Sph^3$.
+No metric is prescribed for this starting embedding.
+
+\paragraph{A uniform family inside the embedding neighborhood.}
+The uniform spherical-preparation theorem applies to this fixed $I$ and every finite set
+$P\subset M$. It supplies constants $C,c,\varepsilon_0>0$ such that,
+for any $0<\varepsilon<\varepsilon_0$, one can choose $I_P:M\to\Sph^3$ with
+\begin{equation}
+ \begin{gathered}
+ B^{\Sph^3}_{I_P}|_P=0,\qquad \|I_P-I\|_{C^1}<\varepsilon,\\
+ \|I_P\|_{C^2}\le C,\qquad I_P^*\delta_4\ge c\,g_{\mathrm{bg}}.
+ \end{gathered}
+ \label{eq:spherical-preparation}
+\end{equation}
+The constants are independent of the number and separation of points
+of $P$. Fix $\varepsilon$ small enough for Lemma~\ref{lem:open}.
+Then every permitted $I_P$ is an embedding, including maps whose finite
+set is chosen later. Restrict the preparation family to this neighborhood.
+
+\paragraph{The order of choices in the global construction.}
+Global metric preparation begins with a fixed spherical immersion and
+its uniform preparation family. Use the embedding $I$ just chosen.
+First choose $\lambda>0$ uniformly for the
+restricted family so that
+\[
+ \gamma^0_{\overline I}=\lambda^2\overline I^*\delta_4<g,
+ \qquad h_{\overline I}=g-\gamma^0_{\overline I}>0.
+\]
+The bounds in \eqref{eq:spherical-preparation} give uniform positive
+lower bounds and $C^1$ bounds for all path metrics
+$\gamma^0_{\overline I}+s h_{\overline I}$, $0\le s\le1$.
+In particular their Christoffel symbols are uniformly bounded.
+
+Uniform metric preparation gives convex phases, disks, and allowed
+perturbation sizes for this family, with strict cone and phase-Hessian
+margins. Choose a number $N_c$ of cycles sufficiently large to retain
+these margins at every partial metric. Each perturbed cycle has an
+invertible bundle endomorphism $\mathcal A_c$ of symmetric tensors and
+amplitudes
+\begin{equation}
+ a_j=N_c^{-1/2}\psi_j
+       \sqrt{q^0_{\nu r}(\mathcal A_c^{-1}h_{\overline I})},
+ \qquad
+ \sum_{j\text{ in cycle }c}a_j^2\dd x_j^2=N_c^{-1}h_{\overline I}.
+ \label{eq:cycles}
+\end{equation}
+Here $q^0_{\nu r}$ are the coefficient functionals of its positive
+rank-one decomposition, and $\psi_j$ are its support cutoffs.
+These formulas and their uniform bounds are part of the metric-preparation
+theorem. Only the already fixed bounds on the family enter these choices.
+
+Now choose the allowed generic boundary and phase perturbations.
+Their boundary-crossing set $P$ is finite. Choose $I_P$ only at this
+stage and set $F^0=\lambda I_P$, $n^0=-I_P$. Insert the actual deficit
+$h=g-\gamma(F^0)$ in \eqref{eq:cycles}. The uniform preparation estimates
+retain the cone, Hessian, and exact-cycle identities for this choice.
+Since $I_P$ is an embedding, so is $F^0$. No earlier constant needs to
+be chosen again after selecting $P$.
+
+\paragraph{Initial boundary geometry.}
+For $\gamma^0=\gamma(F^0)$, the radial decomposition is
+\begin{equation}
+ B_{F^0}(v,w)=\lambda B^{\Sph^3}_{I_P}(v,w)
+                +\lambda^{-1}\gamma^0(v,w)n^0.
+ \label{eq:radial}
+\end{equation}
+Its dot product with $n^0$ is positive for $v=w\ne0$, so the second-form
+tensor is nowhere zero and every pure direction avoids $-n^0$.
+At a point of $P$, the spherical term vanishes. The Gauss equation gives
+$K_{\gamma^0}=\lambda^{-2}$ and
+\begin{equation}
+ \begin{aligned}
+ Q_{il}(F^0)
+ &=\lambda^{-2}\bigl(\gamma^0(Y_i,Y_l)^2+
+                         |Y_i\wedge Y_l|_{\gamma^0}^2\bigr)\\
+ &=\lambda^{-2}\gamma^0(Y_i,Y_i)\gamma^0(Y_l,Y_l)>0.
+ \end{aligned}
+ \label{eq:initial-crossing}
+\end{equation}
+This verifies both ordered crossing conditions. All initial hypotheses
+of the finite construction are therefore retained.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Assume first that $M$ is connected. Lemma~\ref{lem:preparation} gives
+an embedded $F^0$ and a finite list $(D_j,x_j,y_j,a_j)$, $1\le j\le K$,
+with exact prescribed metrics
+\begin{equation}
+ \begin{gathered}
+ \gamma^j=\gamma(F^0)+\sum_{i=1}^j a_i^2\dd x_i^2,
+ \qquad \gamma^K=g,\\
+ \Hess_{\gamma^{j-1}}x_j(\partial_{y_j},\partial_{y_j})>0
+ \quad\text{on }\overline D_j.
+ \end{gathered}
+ \label{eq:finite-metrics}
+\end{equation}
+Suppose $F^{j-1}$ is an embedding with induced metric $\gamma^{j-1}$,
+nowhere-zero second-form tensor, and a preferred normal satisfying all
+remaining boundary conditions. The geometric curve conditions are fixed
+by preparation; the Hessian condition is intrinsic and follows from
+\eqref{eq:finite-metrics}. Proposition~\ref{prop:primitive} gives an
+embedding $F^j$ inducing $\gamma^j$ and retaining the conditions needed
+for the next step. This closes the finite induction. Its final map
+$f=F^K$ is an embedding with induced metric $g$.
+
+Each scale is chosen after fixing the current smooth map. Constants
+and tubular radii need not be uniform between stages. At each stage,
+Proposition~\ref{prop:primitive} applies to the exact output of the
+primitive-realization theorem. No
+injectivity assertion is inferred from a mere $C^0$ limit of embeddings.
+
+A compact manifold has finitely many connected components because
+its components are open. Apply the connected construction to each
+component and translate the finitely many compact images to make them
+disjoint. Translations preserve the induced metric. The empty case is
+vacuous.
+\end{proof}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The construction starts from an embedded surface in a small round
+three-sphere and decomposes the prescribed metric change into finitely many
+primitive additions. At each step, the positive transverse phase Hessian
+makes the oscillation plane complementary to the old tangent plane.
+An oblique tubular retraction cancels the leading derivative oscillation,
+so its composition with the exact corrected map is $C^1$ close to the
+previous embedding. This proves injectivity of the corrected map itself.
+The corrected map retains the exact new metric and the geometric
+conditions needed for the next addition.
+
+Uniform spherical preparation provides the initial embedding and the
+finite metric sequence. Applying the embedding-preserving primitive step
+along this sequence gives a final smooth embedding with the prescribed
+metric. Thus, using the exact primitive-realization, boundary-propagation,
+and preparation theorems in the forms stated above, we conclude that every
+closed orientable smooth Riemannian surface $(M,g)$ admits a smooth embedding
+\[
+ \boxed{f:M\hookrightarrow\R^4,\qquad f^*\delta_4=g.}
+\]
+The metric $g$ is arbitrary; no curvature restriction is required. For disconnected surfaces, translations separate the finitely
+many component images while preserving their induced metrics.
+
+\end{document}

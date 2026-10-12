@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "FCSolution",
+  "theorem_names": [
+    "SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

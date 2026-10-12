@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "R4Initial.FinalTheorem",
+  "theorem_names": ["R4Embedding.closedOrientableSurfaceEmbedding"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

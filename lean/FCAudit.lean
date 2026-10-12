@@ -1,0 +1,4 @@
+import FCSolution
+
+#print axioms SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4
+#print axioms R4Embedding.closedOrientableSurfaceEmbedding
