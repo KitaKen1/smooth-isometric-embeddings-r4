@@ -1,0 +1,395 @@
+﻿2026-10-12T10:00:22.8541910Z ##[group]Run bash comparator/run-check.sh
+2026-10-12T10:00:22.8542289Z [36;1mbash comparator/run-check.sh[0m
+2026-10-12T10:00:22.8579278Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T10:00:22.8579729Z env:
+2026-10-12T10:00:22.8580030Z   COMPARATOR_TOOLS: /home/runner/work/_temp/comparator-tools
+2026-10-12T10:00:22.8580516Z ##[endgroup]
+2026-10-12T10:00:27.7603358Z Input check passed: 1 target, 2511 unchanged release inputs; FC checkout compatibility pending.
+2026-10-12T10:00:28.4354400Z Running as unit: run-u17.service
+2026-10-12T10:00:28.8849335Z Building Challenge
+2026-10-12T10:00:30.6275435Z ⚠ [2819/2820] Replayed Challenge
+2026-10-12T10:00:30.6276047Z warning: Challenge.lean:10:8: declaration uses `sorry`
+2026-10-12T10:00:30.6309394Z Build completed successfully (2820 jobs).
+2026-10-12T10:00:39.2390004Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+2026-10-12T10:00:39.2391611Z Building FCSolution
+2026-10-12T10:00:40.6714244Z ℹ [3172/3308] Replayed R4CoS.Moise.PolygonalJordan
+2026-10-12T10:00:40.6714936Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:111:37: Try this:
+2026-10-12T10:00:40.6715561Z   [apply] ring_nf
+2026-10-12T10:00:40.6715953Z   
+2026-10-12T10:00:40.6716485Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6717163Z     
+2026-10-12T10:00:40.6718060Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6719181Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:174:37: Try this:
+2026-10-12T10:00:40.6719852Z   [apply] ring_nf
+2026-10-12T10:00:40.6720220Z   
+2026-10-12T10:00:40.6720776Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6721736Z     
+2026-10-12T10:00:40.6722582Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6723272Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:726:54: Try this:
+2026-10-12T10:00:40.6723672Z   [apply] abel_nf
+2026-10-12T10:00:40.6724184Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:731:73: Try this:
+2026-10-12T10:00:40.6724619Z   [apply] abel_nf
+2026-10-12T10:00:40.6725113Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:734:47: Try this:
+2026-10-12T10:00:40.6725667Z   [apply] ring_nf
+2026-10-12T10:00:40.6726029Z   
+2026-10-12T10:00:40.6726532Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6726939Z     
+2026-10-12T10:00:40.6727654Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6728597Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1138:56: Try this:
+2026-10-12T10:00:40.6729391Z   [apply] abel_nf
+2026-10-12T10:00:40.6729784Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1154:75: Try this:
+2026-10-12T10:00:40.6730323Z   [apply] abel_nf
+2026-10-12T10:00:40.6730710Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1398:58: Try this:
+2026-10-12T10:00:40.6731203Z   [apply] abel_nf
+2026-10-12T10:00:40.6731546Z info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1648:2: Try this:
+2026-10-12T10:00:40.6731952Z   [apply] abel_nf
+2026-10-12T10:00:40.6732423Z ℹ [3211/3308] Replayed R4CoS.Moise.LocallyFiniteGraphPL
+2026-10-12T10:00:40.6732840Z info: stage07/vendor/R4CoS/Moise/LocallyFiniteGraphPL.lean:79:2: Try this:
+2026-10-12T10:00:40.6733786Z   [apply] ring_nf
+2026-10-12T10:00:40.6734053Z   
+2026-10-12T10:00:40.6734468Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6734962Z     
+2026-10-12T10:00:40.6735528Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6736748Z ℹ [3215/3308] Replayed R4CoS.Moise.PolygonalCrosscut
+2026-10-12T10:00:40.6737161Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:729:43: Try this:
+2026-10-12T10:00:40.6737639Z   [apply] ring_nf
+2026-10-12T10:00:40.6737955Z   
+2026-10-12T10:00:40.6738540Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6738967Z     
+2026-10-12T10:00:40.6739597Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6740358Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:731:52: Try this:
+2026-10-12T10:00:40.6740830Z   [apply] ring_nf
+2026-10-12T10:00:40.6741062Z   
+2026-10-12T10:00:40.6741417Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6741834Z     
+2026-10-12T10:00:40.6742533Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6743183Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:731:52: Try this:
+2026-10-12T10:00:40.6743593Z   [apply] ring_nf
+2026-10-12T10:00:40.6743828Z   
+2026-10-12T10:00:40.6744283Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6744629Z     
+2026-10-12T10:00:40.6745265Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6746099Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:741:23: Try this:
+2026-10-12T10:00:40.6746852Z   [apply] ring_nf
+2026-10-12T10:00:40.6747139Z   
+2026-10-12T10:00:40.6747591Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6747954Z     
+2026-10-12T10:00:40.6748699Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6749585Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:765:24: Try this:
+2026-10-12T10:00:40.6750040Z   [apply] ring_nf
+2026-10-12T10:00:40.6750376Z   
+2026-10-12T10:00:40.6750783Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6751186Z     
+2026-10-12T10:00:40.6751753Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6752467Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:774:24: Try this:
+2026-10-12T10:00:40.6752825Z   [apply] ring_nf
+2026-10-12T10:00:40.6753114Z   
+2026-10-12T10:00:40.6753507Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6753941Z     
+2026-10-12T10:00:40.6754504Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6755245Z info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:1918:2: Try this:
+2026-10-12T10:00:40.6755684Z   [apply] abel_nf
+2026-10-12T10:00:40.6756099Z ℹ [3220/3308] Replayed R4CoS.Moise.PolygonalSchoenflies
+2026-10-12T10:00:40.6756603Z info: stage07/vendor/R4CoS/Moise/PolygonalSchoenflies.lean:203:35: Try this:
+2026-10-12T10:00:40.6756990Z   [apply] ring_nf
+2026-10-12T10:00:40.6757428Z   
+2026-10-12T10:00:40.6757749Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6758176Z     
+2026-10-12T10:00:40.6758928Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.6759667Z info: stage07/vendor/R4CoS/Moise/PolygonalSchoenflies.lean:215:35: Try this:
+2026-10-12T10:00:40.6760011Z   [apply] ring_nf
+2026-10-12T10:00:40.6760298Z   
+2026-10-12T10:00:40.6760701Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.6761081Z     
+2026-10-12T10:00:40.6761802Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7715826Z ℹ [3287/3579] Replayed R4CoS.FiniteCyclicP1Realization
+2026-10-12T10:00:40.7717807Z info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:909:2: Try this:
+2026-10-12T10:00:40.7718547Z   [apply] ring_nf
+2026-10-12T10:00:40.7718869Z   
+2026-10-12T10:00:40.7719316Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.7719733Z     
+2026-10-12T10:00:40.7720303Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7721013Z info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:960:2: Try this:
+2026-10-12T10:00:40.7721581Z   [apply] ring_nf
+2026-10-12T10:00:40.7721853Z   
+2026-10-12T10:00:40.7722250Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.7722581Z     
+2026-10-12T10:00:40.7723174Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7723971Z info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:990:2: Try this:
+2026-10-12T10:00:40.7724483Z   [apply] ring_nf
+2026-10-12T10:00:40.7724706Z   
+2026-10-12T10:00:40.7725099Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.7725555Z     
+2026-10-12T10:00:40.7726279Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7727066Z ⚠ [3301/3579] Replayed R4Initial.PresentationEuler
+2026-10-12T10:00:40.7727585Z warning: stage07/R4Initial/PresentationEuler.lean:748:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7728258Z warning: stage07/R4Initial/PresentationEuler.lean:748:50: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+2026-10-12T10:00:40.7729616Z warning: stage07/R4Initial/PresentationEuler.lean:981:60: `if_false` has been deprecated: Use `ite_false` instead
+2026-10-12T10:00:40.7730452Z warning: stage07/R4Initial/PresentationEuler.lean:993:37: `if_true` has been deprecated: Use `ite_true` instead
+2026-10-12T10:00:40.7731247Z warning: stage07/R4Initial/PresentationEuler.lean:1442:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7731802Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7732306Z ```
+2026-10-12T10:00:40.7732612Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7732937Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7733280Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7733570Z ```
+2026-10-12T10:00:40.7733954Z ⚠ [3302/3579] Replayed R4Initial.ModelPresentation
+2026-10-12T10:00:40.7734576Z warning: stage07/R4Initial/ModelPresentation.lean:138:40: This simp argument is unused:
+2026-10-12T10:00:40.7734959Z   List.mem_singleton
+2026-10-12T10:00:40.7735320Z 
+2026-10-12T10:00:40.7735515Z Hint: Omit it from the simp argument list.
+2026-10-12T10:00:40.7735948Z   [apply] simp only [typedFaces, List.mem_cons, List.not_mem_nil, or_false]
+2026-10-12T10:00:40.7736286Z 
+2026-10-12T10:00:40.7736548Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T10:00:40.7737197Z ⚠ [3303/3579] Replayed R4Initial.ModelPresentationValid
+2026-10-12T10:00:40.7737734Z warning: stage07/R4Initial/ModelPresentationValid.lean:179:62: This simp argument is unused:
+2026-10-12T10:00:40.7738266Z   eq_self_iff_true
+2026-10-12T10:00:40.7738553Z 
+2026-10-12T10:00:40.7738703Z Hint: Omit it from the simp argument list.
+2026-10-12T10:00:40.7739328Z   [apply] simp only [edgeOfDart, MEdge.outer.injEq, Fin.mk.injEq, true_and] at h
+2026-10-12T10:00:40.7739653Z 
+2026-10-12T10:00:40.7739923Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T10:00:40.7740404Z warning: stage07/R4Initial/ModelPresentationValid.lean:202:62: This simp argument is unused:
+2026-10-12T10:00:40.7740919Z   eq_self_iff_true
+2026-10-12T10:00:40.7741079Z 
+2026-10-12T10:00:40.7741286Z Hint: Omit it from the simp argument list.
+2026-10-12T10:00:40.7741808Z   [apply] simp only [edgeOfDart, MEdge.outer.injEq, Fin.mk.injEq, true_and] at h
+2026-10-12T10:00:40.7742132Z 
+2026-10-12T10:00:40.7742308Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T10:00:40.7742813Z ⚠ [3338/3579] Replayed R4Initial.ModelFaceMap
+2026-10-12T10:00:40.7743337Z warning: stage07/R4Initial/ModelFaceMap.lean:44:28: Variable name `hi` is not explicitly referenced.
+2026-10-12T10:00:40.7743768Z 
+2026-10-12T10:00:40.7744134Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-12T10:00:40.7744752Z   [apply] _hi
+2026-10-12T10:00:40.7744890Z 
+2026-10-12T10:00:40.7745155Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-12T10:00:40.7745855Z warning: stage07/R4Initial/ModelFaceMap.lean:127:30: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+2026-10-12T10:00:40.7746711Z warning: stage07/R4Initial/ModelFaceMap.lean:275:2: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+2026-10-12T10:00:40.7747440Z warning: stage07/R4Initial/ModelFaceMap.lean:309:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7748158Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7748679Z ```
+2026-10-12T10:00:40.7749015Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7749427Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7749854Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7750176Z ```
+2026-10-12T10:00:40.7750587Z warning: stage07/R4Initial/ModelFaceMap.lean:320:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7751269Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7751782Z ```
+2026-10-12T10:00:40.7752107Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7752484Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7752905Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7753172Z ```
+2026-10-12T10:00:40.7753597Z warning: stage07/R4Initial/ModelFaceMap.lean:327:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7754157Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7754591Z ```
+2026-10-12T10:00:40.7754801Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7755135Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7755454Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7755702Z ```
+2026-10-12T10:00:40.7756193Z warning: stage07/R4Initial/ModelFaceMap.lean:360:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7756847Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7757361Z ```
+2026-10-12T10:00:40.7757651Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7758017Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7758601Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7758853Z ```
+2026-10-12T10:00:40.7759250Z warning: stage07/R4Initial/ModelFaceMap.lean:643:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7760001Z warning: stage07/R4Initial/ModelFaceMap.lean:649:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7760793Z warning: stage07/R4Initial/ModelFaceMap.lean:654:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7761514Z warning: stage07/R4Initial/ModelFaceMap.lean:658:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7762854Z warning: stage07/R4Initial/ModelFaceMap.lean:711:23: Unused tactic linter: `ring` does nothing
+2026-10-12T10:00:40.7763391Z 
+2026-10-12T10:00:40.7763601Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7764053Z warning: stage07/R4Initial/ModelFaceMap.lean:718:23: Unused tactic linter: `ring` does nothing
+2026-10-12T10:00:40.7764340Z 
+2026-10-12T10:00:40.7764518Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7765170Z warning: stage07/R4Initial/ModelFaceMap.lean:740:33: Unused tactic linter: `field_simp` does nothing
+2026-10-12T10:00:40.7765592Z 
+2026-10-12T10:00:40.7765814Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7766424Z warning: stage07/R4Initial/ModelFaceMap.lean:740:33: this tactic is never executed
+2026-10-12T10:00:40.7766700Z 
+2026-10-12T10:00:40.7766896Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T10:00:40.7767430Z warning: stage07/R4Initial/ModelFaceMap.lean:754:33: Unused tactic linter: `field_simp` does nothing
+2026-10-12T10:00:40.7767917Z 
+2026-10-12T10:00:40.7768101Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7768724Z warning: stage07/R4Initial/ModelFaceMap.lean:754:33: this tactic is never executed
+2026-10-12T10:00:40.7768956Z 
+2026-10-12T10:00:40.7769161Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T10:00:40.7769626Z warning: stage07/R4Initial/ModelFaceMap.lean:768:33: Unused tactic linter: `field_simp` does nothing
+2026-10-12T10:00:40.7770027Z 
+2026-10-12T10:00:40.7770287Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7770791Z warning: stage07/R4Initial/ModelFaceMap.lean:768:33: this tactic is never executed
+2026-10-12T10:00:40.7771151Z 
+2026-10-12T10:00:40.7771341Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T10:00:40.7771920Z warning: stage07/R4Initial/ModelFaceMap.lean:1022:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7772634Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7773156Z ```
+2026-10-12T10:00:40.7773425Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7773879Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7774329Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7774701Z ```
+2026-10-12T10:00:40.7775106Z warning: stage07/R4Initial/ModelFaceMap.lean:1029:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T10:00:40.7775615Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T10:00:40.7776090Z ```
+2026-10-12T10:00:40.7776385Z open Lean.Parser.Tactic in
+2026-10-12T10:00:40.7776770Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T10:00:40.7777350Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T10:00:40.7777592Z ```
+2026-10-12T10:00:40.7777962Z ℹ [3350/3579] Replayed R4CoS.TriangleCell
+2026-10-12T10:00:40.7778285Z info: stage07/vendor/R4CoS/TriangleCell.lean:300:27: Try this:
+2026-10-12T10:00:40.7778880Z   [apply] ring_nf
+2026-10-12T10:00:40.7779154Z   
+2026-10-12T10:00:40.7779616Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.7780035Z     
+2026-10-12T10:00:40.7780789Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7781703Z info: stage07/vendor/R4CoS/TriangleCell.lean:316:27: Try this:
+2026-10-12T10:00:40.7782110Z   [apply] ring_nf
+2026-10-12T10:00:40.7782409Z   
+2026-10-12T10:00:40.7782744Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T10:00:40.7783209Z     
+2026-10-12T10:00:40.7783831Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T10:00:40.7784523Z ⚠ [3375/3579] Replayed R4Initial.NormalFormGenus
+2026-10-12T10:00:40.7784938Z warning: stage07/R4Initial/NormalFormGenus.lean:53:2: Try this: 
+2026-10-12T10:00:40.7787867Z   letI̵
+2026-10-12T10:00:40.7787991Z 
+2026-10-12T10:00:40.7788164Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T10:00:40.7788859Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T10:00:40.7789395Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T10:00:40.7789668Z 
+2026-10-12T10:00:40.7789981Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T10:00:40.7790382Z warning: stage07/R4Initial/NormalFormGenus.lean:54:2: Try this: 
+2026-10-12T10:00:40.7790734Z   haveI̵
+2026-10-12T10:00:40.7790886Z 
+2026-10-12T10:00:40.7791062Z The goal is a proposition, so `have` is preferred over `haveI`.
+2026-10-12T10:00:40.7791608Z The difference between `have` and `haveI` is that `haveI` inlines the value.
+2026-10-12T10:00:40.7792004Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T10:00:40.7792263Z 
+2026-10-12T10:00:40.7792545Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T10:00:40.7793125Z ⚠ [3376/3579] Replayed R4Initial.ModelRealization
+2026-10-12T10:00:40.7793718Z warning: stage07/R4Initial/ModelRealization.lean:82:33: Unused tactic linter: `field_simp` does nothing
+2026-10-12T10:00:40.7794182Z 
+2026-10-12T10:00:40.7794413Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:40.7795031Z warning: stage07/R4Initial/ModelRealization.lean:82:33: this tactic is never executed
+2026-10-12T10:00:40.7795334Z 
+2026-10-12T10:00:40.7795623Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T10:00:40.7796245Z warning: stage07/R4Initial/ModelRealization.lean:262:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7797092Z warning: stage07/R4Initial/ModelRealization.lean:262:63: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7797894Z warning: stage07/R4Initial/ModelRealization.lean:277:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7798831Z warning: stage07/R4Initial/ModelRealization.lean:288:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7799554Z warning: stage07/R4Initial/ModelRealization.lean:297:22: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7800137Z warning: stage07/R4Initial/ModelRealization.lean:314:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7800722Z warning: stage07/R4Initial/ModelRealization.lean:438:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7801377Z warning: stage07/R4Initial/ModelRealization.lean:454:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+2026-10-12T10:00:40.7802090Z warning: stage07/R4Initial/ModelRealization.lean:489:16: `if_neg` has been deprecated: Use `ite_eq_right` instead
+2026-10-12T10:00:40.7802725Z ⚠ [3379/3579] Replayed R4Embedding.PolynomialKernelArea
+2026-10-12T10:00:40.7803254Z warning: R4Embedding/PolynomialKernelArea.lean:47:12: This simp argument is unused:
+2026-10-12T10:00:40.7803836Z   Basis.prod_apply_inl_fst
+2026-10-12T10:00:40.7804000Z 
+2026-10-12T10:00:40.7804187Z Hint: Omit it from the simp argument list.
+2026-10-12T10:00:40.7804541Z   [apply] simp
+2026-10-12T10:00:40.7804720Z 
+2026-10-12T10:00:40.7804965Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T10:00:41.1715764Z ⚠ [4314/4580] Replayed DifferentialGeometry.Topology.PlanarJordan.RegularCurve
+2026-10-12T10:00:41.1716972Z warning: models_upstream/DifferentialGeometry/Topology/PlanarJordan/RegularCurve.lean:59:4: Unused tactic linter: `all_goals (ext v; rfl)` does nothing
+2026-10-12T10:00:41.1717541Z 
+2026-10-12T10:00:41.1717803Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T10:00:41.1718541Z warning: models_upstream/DifferentialGeometry/Topology/PlanarJordan/RegularCurve.lean:59:14: this tactic is never executed
+2026-10-12T10:00:41.1719057Z 
+2026-10-12T10:00:41.1719338Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T10:00:41.1719978Z ⚠ [4560/4580] Replayed R4Initial.RelativeChartSmoothing
+2026-10-12T10:00:41.1720723Z warning: stage07/R4Initial/RelativeChartSmoothing.lean:259:0: automatically included section variable(s) unused in theorem `R4Embedding.exists_smooth_triangles_keeping`:
+2026-10-12T10:00:41.1721441Z   [T2Space N]
+2026-10-12T10:00:41.1721759Z   [IsManifold planeModel ∞ M]
+2026-10-12T10:00:41.1722192Z   [IsManifold planeModel ∞ N]
+2026-10-12T10:00:41.1722804Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:41.1723958Z   omit [T2Space N] [IsManifold planeModel ∞ M] [IsManifold planeModel ∞ N] in theorem ...
+2026-10-12T10:00:41.1724228Z 
+2026-10-12T10:00:41.1724449Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.8738746Z ⚠ [10930/11419] Replayed R4Analytic.AnalyticAtlasC1Stability
+2026-10-12T10:00:44.8740041Z warning: analytic/R4Analytic/AnalyticAtlasC1Stability.lean:28:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_pair_chart_source`:
+2026-10-12T10:00:44.8741076Z   [IsManifold planeModel ∞ M]
+2026-10-12T10:00:44.8742203Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.8743153Z   omit [IsManifold planeModel ∞ M] in theorem ...
+2026-10-12T10:00:44.8743457Z 
+2026-10-12T10:00:44.8743744Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.8744804Z warning: analytic/R4Analytic/AnalyticAtlasC1Stability.lean:46:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_chart_derivative_injective`:
+2026-10-12T10:00:44.8745608Z   [IsManifold planeModel ∞ M]
+2026-10-12T10:00:44.8746285Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.8747005Z   omit [IsManifold planeModel ∞ M] in theorem ...
+2026-10-12T10:00:44.8747255Z 
+2026-10-12T10:00:44.8747497Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9732147Z ⚠ [11188/11419] Replayed R4Analytic.AnalyticPhaseCoordinates
+2026-10-12T10:00:44.9732942Z warning: analytic/R4Analytic/AnalyticPhaseCoordinates.lean:26:0: automatically included section variable(s) unused in theorem `R4Embedding.analyticPhaseChart_symm`:
+2026-10-12T10:00:44.9733814Z   [CompactSpace M]
+2026-10-12T10:00:44.9734324Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9734780Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9734989Z 
+2026-10-12T10:00:44.9735181Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9735697Z ⚠ [11189/11419] Replayed R4Analytic.AnalyticClosedWeightCoordinates
+2026-10-12T10:00:44.9736405Z warning: analytic/R4Analytic/AnalyticClosedWeightCoordinates.lean:25:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_outer_domain_isOpen`:
+2026-10-12T10:00:44.9736986Z   [CompactSpace M]
+2026-10-12T10:00:44.9737375Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9737864Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9738009Z 
+2026-10-12T10:00:44.9738220Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9739184Z warning: analytic/R4Analytic/AnalyticClosedWeightCoordinates.lean:30:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_raw_germ_of_outer_one`:
+2026-10-12T10:00:44.9739801Z   [CompactSpace M]
+2026-10-12T10:00:44.9740208Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9740646Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9740815Z 
+2026-10-12T10:00:44.9740998Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9741580Z ⚠ [11190/11419] Replayed R4Analytic.AnalyticPreparedGeometry
+2026-10-12T10:00:44.9742214Z warning: analytic/R4Analytic/AnalyticPreparedGeometry.lean:20:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_chart_inverse_smooth`:
+2026-10-12T10:00:44.9742764Z   [CompactSpace M]
+2026-10-12T10:00:44.9743244Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9744002Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9744263Z 
+2026-10-12T10:00:44.9744494Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9745061Z ⚠ [11191/11419] Replayed R4Analytic.AnalyticSupportGeometry
+2026-10-12T10:00:44.9745833Z warning: analytic/R4Analytic/AnalyticSupportGeometry.lean:62:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_profile_compact_neighborhood`:
+2026-10-12T10:00:44.9746713Z   [T2Space M]
+2026-10-12T10:00:44.9747315Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9747783Z   omit [T2Space M] in theorem ...
+2026-10-12T10:00:44.9747952Z 
+2026-10-12T10:00:44.9748137Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9748751Z ⚠ [11193/11419] Replayed R4Analytic.AnalyticOrdinaryGeometry
+2026-10-12T10:00:44.9749566Z warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:21:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_native_coordinate_map`:
+2026-10-12T10:00:44.9750180Z   [IsManifold planeModel ∞ M]
+2026-10-12T10:00:44.9750438Z   [CompactSpace M]
+2026-10-12T10:00:44.9750841Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9751564Z   omit [IsManifold planeModel ∞ M] [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9751817Z 
+2026-10-12T10:00:44.9752001Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9752793Z warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:72:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_exterior_domain_isOpen`:
+2026-10-12T10:00:44.9753683Z   [CompactSpace M]
+2026-10-12T10:00:44.9754066Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9754574Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9754745Z 
+2026-10-12T10:00:44.9754959Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9755949Z warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:81:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_exterior_domains_cover`:
+2026-10-12T10:00:44.9756594Z   [CompactSpace M]
+2026-10-12T10:00:44.9757006Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9757469Z   omit [CompactSpace M] in theorem ...
+2026-10-12T10:00:44.9757676Z 
+2026-10-12T10:00:44.9757859Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:44.9758611Z ⚠ [11194/11419] Replayed R4Analytic.AnalyticPrimitiveAtlas
+2026-10-12T10:00:44.9759295Z warning: analytic/R4Analytic/AnalyticPrimitiveAtlas.lean:85:0: automatically included section variable(s) unused in theorem `R4Embedding.AnalyticPrimitivePatch.profiles_from_output`:
+2026-10-12T10:00:44.9759881Z   [T2Space M]
+2026-10-12T10:00:44.9760430Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T10:00:44.9760969Z   omit [T2Space M] in theorem ...
+2026-10-12T10:00:44.9761196Z 
+2026-10-12T10:00:44.9761446Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T10:00:45.2856985Z Build completed successfully (11419 jobs).
+2026-10-12T10:12:11.0851944Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from FCSolution
+2026-10-12T10:12:11.0857575Z Running Lean default kernel on solution.
+2026-10-12T10:12:11.0857847Z Lean default kernel accepts the solution
+2026-10-12T10:12:11.0859751Z Your solution is okay!
+2026-10-12T10:12:11.2223872Z Finished with result: success
+2026-10-12T10:12:11.2224377Z Main processes terminated with: code=exited/status=0
+2026-10-12T10:12:11.2224724Z Service runtime: 11min 42.769s
+2026-10-12T10:12:11.2224992Z CPU time consumed: 11min 24.396s
+2026-10-12T10:12:11.2225275Z Memory peak: 3.8M
+2026-10-12T10:12:11.2225499Z Memory swap peak: 0B
+2026-10-12T10:12:11.9971487Z Input check passed: 1 target, 2511 unchanged release inputs; FC checkout compatibility pending.
+2026-10-12T10:12:26.1474973Z 'SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-12T10:12:26.1479793Z 'R4Embedding.closedOrientableSurfaceEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+﻿2026-10-12T10:00:21.9504303Z ##[group]Run tar -xf "$RUNNER_TEMP/trusted-challenge/files.tar"
+2026-10-12T10:00:21.9504965Z [36;1mtar -xf "$RUNNER_TEMP/trusted-challenge/files.tar"[0m
+2026-10-12T10:00:22.4567451Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T10:00:22.4567971Z ##[endgroup]

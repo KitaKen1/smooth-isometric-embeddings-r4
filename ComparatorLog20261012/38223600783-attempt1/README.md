@@ -1,7 +1,7 @@
 # Lean Comparator records: run 38223600783, attempt 1
 
 The verification on public `main` completed successfully on 12 October 2026.
-This folder keeps the original artifacts of that run and GitHub's API records in Git,
+This folder keeps the original artifacts and workflow logs of that run and GitHub's API records in Git,
 so that readers can inspect them after the Actions retention period ends.
 The records refer to the tested commit below. The later commit that adds this
 folder changes documentation and records only.
@@ -33,14 +33,17 @@ Original online records:
 | [github/jobs.json](github/jobs.json) | The four jobs and the conclusion of each of their steps |
 | [github/artifacts.json](github/artifacts.json) | Artifact identities, sizes, expiry and the digests reported by GitHub |
 | [github/repository.json](github/repository.json) | GitHub API response for the repository |
+| [github/workflow-logs.zip](github/workflow-logs.zip) | Complete log archive of the run attempt, as downloaded from the run page |
+| [github/logs/](github/logs/) | Every member of the log archive: the full log of each job and the logs of its steps |
 | [provenance.json](provenance.json) | Index written during archival: run, commits, artifact digests |
 | [SHA256SUMS](SHA256SUMS) | Checksums of every other file in this folder, including this guide |
 
-The complete workflow logs are not in this folder; GitHub serves them only to signed-in users.
-The receipts contain the complete output of the build (`build.log`), of Comparator
-(`comparator.log`) and of the axiom audit (`axioms.log`), and the report of the kernel replay
-(`time.log`). The API responses are saved as retrieved, without credentials. This guide,
-`provenance.json` and `SHA256SUMS` were generated locally during archival.
+The artifact ZIPs and the log archive were downloaded from the run page in a signed-in browser.
+The API responses are saved as retrieved, without credentials. For the build job the log
+archive holds the full job log only. The receipts contain the complete output of the build
+(`build.log`), of Comparator (`comparator.log`) and of the axiom audit (`axioms.log`), and the
+report of the kernel replay (`time.log`). This guide, `provenance.json` and `SHA256SUMS` were
+generated locally during archival.
 
 ## How to check the result
 
@@ -65,6 +68,7 @@ The receipts contain the complete output of the build (`build.log`), of Comparat
    [axioms.log](receipt/comparator-38223600783-1/axioms.log) reports
    `[propext, Classical.choice, Quot.sound]` for the target and for
    `R4Embedding.closedOrientableSurfaceEmbedding`.
+   The timestamped [job log](github/logs/2_comparator.txt) contains the same output.
 5. Read [time.log](receipt/replay-38223600783-1/time.log). The kernel-only replay
    `leanchecker --fresh R4Initial.FinalTheorem` ended with `Exit status: 0`.
 6. Inspect [comparator.yml](receipt/comparator-38223600783-1/comparator.yml) and the
@@ -98,7 +102,7 @@ replay-38223600783-1         sha256:bd99113650bc64d8c86572bf1e965c9ca9064d8fbd1d
 ```
 
 The checksums of the downloaded ZIPs were compared with these digests before this folder was
-committed.
+committed. The upload steps in the job logs print the same three digests.
 
 ## Limits
 

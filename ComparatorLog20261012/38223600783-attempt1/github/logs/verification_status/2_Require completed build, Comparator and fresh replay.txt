@@ -1,0 +1,10 @@
+﻿2026-10-12T10:45:04.6122455Z ##[group]Run test "$READY" = true
+2026-10-12T10:45:04.6123236Z [36;1mtest "$READY" = true[0m
+2026-10-12T10:45:04.6123949Z [36;1mtest "$COMPARE" = success[0m
+2026-10-12T10:45:04.6124789Z [36;1mtest "$REPLAY" = success[0m
+2026-10-12T10:45:04.7056427Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T10:45:04.7057796Z env:
+2026-10-12T10:45:04.7058484Z   READY: true
+2026-10-12T10:45:04.7059115Z   COMPARE: success
+2026-10-12T10:45:04.7059679Z   REPLAY: success
+2026-10-12T10:45:04.7060278Z ##[endgroup]

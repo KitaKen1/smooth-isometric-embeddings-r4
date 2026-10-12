@@ -124,7 +124,7 @@ The local publication workspace retains historical R4 private-run records and FC
 records outside this repository candidate, under `local-verification/`. The historical run
 concerns the original R4 Mathlib-only target. `ComparatorLog20261012/` holds the
 records of the successful public FC-target run; they were assembled from the artifact ZIPs
-without the workflow logs.
+and the workflow log archive of that run.
 
 Official references: [Comparator at the pinned revision](https://github.com/leanprover/comparator/blob/ca04cfc72b550331658ec314bf47685281bfd4bf/README.md),
 [FC contribution guidance](https://github.com/google-deepmind/formal-conjectures/blob/main/CONTRIBUTING.md).

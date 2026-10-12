@@ -1,0 +1,8 @@
+﻿2026-10-12T10:12:27.7776205Z Post job cleanup.
+2026-10-12T10:12:27.8700926Z (node:4924) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T10:12:27.8701469Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T10:12:27.8742445Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOCACHE
+2026-10-12T10:12:27.8770491Z [command]/opt/hostedtoolcache/go/1.27.2/x64/bin/go env GOMODCACHE
+2026-10-12T10:12:27.8794753Z /home/runner/.cache/go-build
+2026-10-12T10:12:27.8810157Z /home/runner/go/pkg/mod
+2026-10-12T10:12:27.8814490Z Primary key was not generated. Please check the log messages above for more errors or information

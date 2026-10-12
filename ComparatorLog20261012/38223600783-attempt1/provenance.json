@@ -37,6 +37,14 @@
     }
   ],
   "retrieved_at_utc": "2026-10-12T10:54:01.181074+00:00",
-  "note": "Public API metadata, original ZIPs and all extracted receipts preserved. The artifact ZIPs were downloaded in a browser and checked against the digests reported by GitHub. The workflow and job logs are not included; GitHub serves them only to signed-in users. SHA256SUMS are local file identities, not a signed GitHub attestation. The archive commit is the commit that adds this folder.",
-  "target_scope": "definitions copied from proposed FC draft; FC metadata/import removed and answer(True) normalized to True"
+  "note": "Public API metadata, original artifact ZIPs, the complete workflow log archive and all extracted receipts and logs preserved. The ZIPs were downloaded from the run page in a signed-in browser; the artifact ZIPs were checked against the digests reported by GitHub, which the upload steps in the logs also print. SHA256SUMS are local file identities, not a signed GitHub attestation. The archive commit is the commit that adds this folder.",
+  "target_scope": "definitions copied from proposed FC draft; FC metadata/import removed and answer(True) normalized to True",
+  "workflow_logs": {
+    "file": "github/workflow-logs.zip",
+    "downloaded_name": "logs_103558311857.zip",
+    "sha256": "394b2988f8c116c99918db6ff9130a2eae45dc57098b5e1859bbdda8cfb76887",
+    "size_bytes": 138148,
+    "members": 35,
+    "extracted_to": "github/logs/"
+  }
 }

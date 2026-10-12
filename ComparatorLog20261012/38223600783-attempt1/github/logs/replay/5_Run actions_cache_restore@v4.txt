@@ -1,0 +1,24 @@
+﻿2026-10-12T09:57:18.8733500Z ##[group]Run actions/cache/restore@v4
+2026-10-12T09:57:18.8733810Z with:
+2026-10-12T09:57:18.8734022Z   path: lean/.lake/build
+2026-10-12T09:57:18.8734342Z   key: r4-fc-b8ddbd009791591c817d5b18cb4eb6dd30039853-38223600783-1
+2026-10-12T09:57:18.8734705Z   fail-on-cache-miss: true
+2026-10-12T09:57:18.8734946Z   enableCrossOsArchive: false
+2026-10-12T09:57:18.8735184Z   lookup-only: false
+2026-10-12T09:57:18.8735397Z ##[endgroup]
+2026-10-12T09:57:18.9849384Z (node:3101) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T09:57:18.9850405Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T09:57:19.2396373Z Cache hit for: r4-fc-b8ddbd009791591c817d5b18cb4eb6dd30039853-38223600783-1
+2026-10-12T09:57:19.2505210Z (node:3101) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-12T09:57:20.5106310Z Received 4194304 of 888622129 (0.5%), 4.0 MBs/sec
+2026-10-12T09:57:21.5115710Z Received 134217728 of 888622129 (15.1%), 63.9 MBs/sec
+2026-10-12T09:57:22.5129699Z Received 268435456 of 888622129 (30.2%), 85.2 MBs/sec
+2026-10-12T09:57:23.5177352Z Received 406847488 of 888622129 (45.8%), 96.8 MBs/sec
+2026-10-12T09:57:24.5184329Z Received 536870912 of 888622129 (60.4%), 102.2 MBs/sec
+2026-10-12T09:57:25.5180641Z Received 708837376 of 888622129 (79.8%), 112.5 MBs/sec
+2026-10-12T09:57:26.5185218Z Received 876609536 of 888622129 (98.6%), 119.3 MBs/sec
+2026-10-12T09:57:26.6889017Z Received 888622129 of 888622129 (100.0%), 118.0 MBs/sec
+2026-10-12T09:57:26.6892633Z Cache Size: ~847 MB (888622129 B)
+2026-10-12T09:57:26.7015669Z [command]/usr/bin/tar -xf /home/runner/work/_temp/6a71f725-a6bf-422d-b837-d07ae9569875/cache.tzst -P -C /home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4 --use-compress-program unzstd
+2026-10-12T09:58:05.4234146Z Cache restored successfully
+2026-10-12T09:58:05.8227077Z Cache restored from key: r4-fc-b8ddbd009791591c817d5b18cb4eb6dd30039853-38223600783-1

@@ -1,0 +1,7 @@
+﻿2026-10-12T09:58:06.5272274Z ##[group]Run mkdir -p ../replay-receipt
+2026-10-12T09:58:06.5273418Z [36;1mmkdir -p ../replay-receipt[0m
+2026-10-12T09:58:06.5274629Z [36;1m/usr/bin/time -v lake env leanchecker --fresh R4Initial.FinalTheorem > ../replay-receipt/replay.log 2> ../replay-receipt/time.log[0m
+2026-10-12T09:58:06.5275977Z [36;1mgrep -q 'Exit status: 0' ../replay-receipt/time.log[0m
+2026-10-12T09:58:06.5276726Z [36;1mprintf 'PASS\n' > ../replay-receipt/status.txt[0m
+2026-10-12T09:58:08.8606745Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T09:58:08.8607295Z ##[endgroup]

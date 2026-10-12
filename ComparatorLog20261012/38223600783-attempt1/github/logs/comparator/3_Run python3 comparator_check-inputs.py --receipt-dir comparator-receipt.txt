@@ -1,0 +1,5 @@
+﻿2026-10-12T09:52:05.5441747Z ##[group]Run python3 comparator/check-inputs.py --receipt-dir comparator-receipt
+2026-10-12T09:52:05.5442302Z [36;1mpython3 comparator/check-inputs.py --receipt-dir comparator-receipt[0m
+2026-10-12T09:52:05.5603784Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T09:52:05.5604170Z ##[endgroup]
+2026-10-12T09:52:05.7343984Z Input check passed: 1 target, 2511 unchanged release inputs; FC checkout compatibility pending.

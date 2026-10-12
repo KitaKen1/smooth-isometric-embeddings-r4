@@ -1,0 +1,83 @@
+﻿2026-10-12T09:52:02.8791433Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-12T09:52:02.8792908Z with:
+2026-10-12T09:52:02.8793389Z   persist-credentials: false
+2026-10-12T09:52:02.8794007Z   repository: KitaKen1/smooth-isometric-embeddings-r4
+2026-10-12T09:52:02.8798094Z   token: ***
+2026-10-12T09:52:02.8798520Z   ssh-strict: true
+2026-10-12T09:52:02.8798949Z   ssh-user: git
+2026-10-12T09:52:02.8799367Z   clean: true
+2026-10-12T09:52:02.8799808Z   sparse-checkout-cone-mode: true
+2026-10-12T09:52:02.8800333Z   fetch-depth: 1
+2026-10-12T09:52:02.8800762Z   fetch-tags: false
+2026-10-12T09:52:02.8801217Z   show-progress: true
+2026-10-12T09:52:02.8801669Z   lfs: false
+2026-10-12T09:52:02.8802074Z   submodules: false
+2026-10-12T09:52:02.8802722Z   set-safe-directory: true
+2026-10-12T09:52:02.8803232Z   allow-unsafe-pr-checkout: false
+2026-10-12T09:52:02.8804051Z ##[endgroup]
+2026-10-12T09:52:02.9835999Z Syncing repository: KitaKen1/smooth-isometric-embeddings-r4
+2026-10-12T09:52:02.9838475Z ##[group]Getting Git version info
+2026-10-12T09:52:02.9839643Z Working directory is '/home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4'
+2026-10-12T09:52:02.9840932Z [command]/usr/bin/git version
+2026-10-12T09:52:02.9915805Z git version 2.55.0
+2026-10-12T09:52:02.9937219Z ##[endgroup]
+2026-10-12T09:52:02.9952702Z Temporarily overriding HOME='/home/runner/work/_temp/688b4e68-f100-4763-aea8-f0acb2722594' before making global git config changes
+2026-10-12T09:52:02.9954168Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T09:52:02.9959049Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4
+2026-10-12T09:52:03.0010067Z Deleting the contents of '/home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4'
+2026-10-12T09:52:03.0016682Z ##[group]Initializing the repository
+2026-10-12T09:52:03.0022004Z [command]/usr/bin/git init /home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4
+2026-10-12T09:52:03.0129391Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-12T09:52:03.0131688Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-12T09:52:03.0133948Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-12T09:52:03.0135740Z hint: call:
+2026-10-12T09:52:03.0136526Z hint:
+2026-10-12T09:52:03.0137468Z hint: 	git config --global init.defaultBranch <name>
+2026-10-12T09:52:03.0138715Z hint:
+2026-10-12T09:52:03.0139788Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-12T09:52:03.0141412Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-12T09:52:03.0143133Z hint:
+2026-10-12T09:52:03.0143910Z hint: 	git branch -m <name>
+2026-10-12T09:52:03.0144874Z hint:
+2026-10-12T09:52:03.0146201Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-12T09:52:03.0148538Z Initialized empty Git repository in /home/runner/work/smooth-isometric-embeddings-r4/smooth-isometric-embeddings-r4/.git/
+2026-10-12T09:52:03.0151970Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/smooth-isometric-embeddings-r4
+2026-10-12T09:52:03.0202580Z ##[endgroup]
+2026-10-12T09:52:03.0204046Z ##[group]Disabling automatic garbage collection
+2026-10-12T09:52:03.0207282Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-12T09:52:03.0242096Z ##[endgroup]
+2026-10-12T09:52:03.0243833Z ##[group]Setting up auth
+2026-10-12T09:52:03.0250280Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T09:52:03.0284958Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T09:52:03.0711143Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T09:52:03.0749209Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T09:52:03.0991988Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T09:52:03.1024758Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T09:52:03.1253861Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-12T09:52:03.1291753Z ##[endgroup]
+2026-10-12T09:52:03.1301387Z ##[group]Fetching the repository
+2026-10-12T09:52:03.1303153Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b8ddbd009791591c817d5b18cb4eb6dd30039853:refs/remotes/origin/main
+2026-10-12T09:52:04.3259831Z From https://github.com/KitaKen1/smooth-isometric-embeddings-r4
+2026-10-12T09:52:04.3263665Z  * [new ref]         b8ddbd009791591c817d5b18cb4eb6dd30039853 -> origin/main
+2026-10-12T09:52:04.3269713Z ##[endgroup]
+2026-10-12T09:52:04.3272467Z ##[group]Determining the checkout info
+2026-10-12T09:52:04.3275342Z ##[endgroup]
+2026-10-12T09:52:04.3277239Z [command]/usr/bin/git sparse-checkout disable
+2026-10-12T09:52:04.3327547Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-12T09:52:04.3359916Z ##[group]Checking out the ref
+2026-10-12T09:52:04.3364179Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-12T09:52:04.5328300Z Switched to a new branch 'main'
+2026-10-12T09:52:04.5334664Z branch 'main' set up to track 'origin/main'.
+2026-10-12T09:52:04.5349826Z ##[endgroup]
+2026-10-12T09:52:04.5395237Z [command]/usr/bin/git log -1 --format=%H
+2026-10-12T09:52:04.5421222Z b8ddbd009791591c817d5b18cb4eb6dd30039853
+2026-10-12T09:52:04.5434753Z ##[group]Removing auth
+2026-10-12T09:52:04.5437799Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T09:52:04.5474860Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T09:52:04.5734596Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T09:52:04.5804569Z http.https://github.com/.extraheader
+2026-10-12T09:52:04.5814108Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-12T09:52:04.5848038Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T09:52:04.6075312Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T09:52:04.6105537Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T09:52:04.6331573Z ##[endgroup]
