@@ -1,9 +1,9 @@
 # R4 proposed FC target verification
 
-The FC-target verification described here passed in a private verification repository on
-12 October 2026. The next step is the same verification on public `main`, then archiving that
-successful public run. The public FC-target run has not occurred yet. No R4 Formal Conjectures PR
-has been created.
+The FC-target verification described here passed on public `main` on 12 October 2026
+([run 38223600783](https://github.com/KitaKen1/smooth-isometric-embeddings-r4/actions/runs/38223600783)),
+after passing in a private verification repository. Its records are in
+`ComparatorLog20261012/38223600783-attempt1/`. No R4 Formal Conjectures PR has been created.
 
 The target is `SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4`. The complete proposed
 FC-style file is in `FClikelean/SmoothIsometricEmbeddingR4.lean`; that folder also contains
@@ -80,7 +80,7 @@ permissions and three substantive jobs:
 Comparator success additionally requires exact success lines and exact axiom lines for the FC
 named wrapper and the original R4 theorem. Failed receipts are also uploaded. All artifact
 retention is 90 days. The final gate requires all three jobs to succeed. This workflow has
-checked the FC target in the private verification repository; the public run is pending.
+checked the FC target in the private verification repository and on public `main`.
 Runner preparation and swap helpers live in `comparator/prepare-runner.sh` and
 `comparator/add-swap.sh`; no separate root `ci/` folder is needed.
 
@@ -122,8 +122,9 @@ committing the archive. Local hashes are file identities, not signed GitHub atte
 
 The local publication workspace retains historical R4 private-run records and FC preflight
 records outside this repository candidate, under `local-verification/`. The historical run
-concerns the original R4 Mathlib-only target. Initial publication contains no `ComparatorLog*`;
-that name is reserved here for the later successful public FC-target run.
+concerns the original R4 Mathlib-only target. `ComparatorLog20261012/` holds the
+records of the successful public FC-target run; they were assembled from the artifact ZIPs
+without the workflow logs.
 
 Official references: [Comparator at the pinned revision](https://github.com/leanprover/comparator/blob/ca04cfc72b550331658ec314bf47685281bfd4bf/README.md),
 [FC contribution guidance](https://github.com/google-deepmind/formal-conjectures/blob/main/CONTRIBUTING.md).

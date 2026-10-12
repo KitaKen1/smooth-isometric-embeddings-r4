@@ -11,8 +11,8 @@ The file defines only orientability and writes the Euclidean spaces, smooth metr
 smoothness, injectivity and metric preservation directly in the theorem.
 It contains a `by sorry` statement with an
 external `formal_proof` link, following the Bapat example. `COMMIT` will be replaced
-after publication. The draft has not been submitted to FC. The private CI run for this target
-passed; the public main CI is pending.
+after publication. The draft has not been submitted to FC. The [public main CI run](https://github.com/KitaKen1/smooth-isometric-embeddings-r4/actions/runs/38223600783)
+for this target passed.
 
 The orientability definition is extracted into [FCTargetDefinitions.lean](../lean/FCTargetDefinitions.lean).
 The external proof writes `True` for FC's annotated `answer(True)`.

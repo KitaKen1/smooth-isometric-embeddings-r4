@@ -1,0 +1,42 @@
+{
+  "repository": "KitaKen1/smooth-isometric-embeddings-r4",
+  "run_id": 38223600783,
+  "run_attempt": 1,
+  "proof_commit": "9a60c26cc7387128ce4150fefaf7778cad491504",
+  "tested_commit": "b8ddbd009791591c817d5b18cb4eb6dd30039853",
+  "archive_commit": null,
+  "run_url": "https://github.com/KitaKen1/smooth-isometric-embeddings-r4/actions/runs/38223600783",
+  "conclusion": "success",
+  "artifacts": [
+    {
+      "id": 11739003478,
+      "name": "build-38223600783-1",
+      "file": "artifacts/11739003478-build-38223600783-1.zip",
+      "github_digest": "sha256:6bd31bf86431549696f87d32ef0a6b316bf60757b656a963ff4375853efa86bf",
+      "sha256": "6bd31bf86431549696f87d32ef0a6b316bf60757b656a963ff4375853efa86bf",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T08:26:46Z"
+    },
+    {
+      "id": 11740182682,
+      "name": "comparator-38223600783-1",
+      "file": "artifacts/11740182682-comparator-38223600783-1.zip",
+      "github_digest": "sha256:fa251b98a5f1c8b56a6d8c480535fe63c9d14eb8e230878a55094eec05f96cdb",
+      "sha256": "fa251b98a5f1c8b56a6d8c480535fe63c9d14eb8e230878a55094eec05f96cdb",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T08:26:46Z"
+    },
+    {
+      "id": 11740979114,
+      "name": "replay-38223600783-1",
+      "file": "artifacts/11740979114-replay-38223600783-1.zip",
+      "github_digest": "sha256:bd99113650bc64d8c86572bf1e965c9ca9064d8fbd1d96f445a3f0102afc53ba",
+      "sha256": "bd99113650bc64d8c86572bf1e965c9ca9064d8fbd1d96f445a3f0102afc53ba",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T08:26:46Z"
+    }
+  ],
+  "retrieved_at_utc": "2026-10-12T10:54:01.181074+00:00",
+  "note": "Public API metadata, original ZIPs and all extracted receipts preserved. The artifact ZIPs were downloaded in a browser and checked against the digests reported by GitHub. The workflow and job logs are not included; GitHub serves them only to signed-in users. SHA256SUMS are local file identities, not a signed GitHub attestation. The archive commit is the commit that adds this folder.",
+  "target_scope": "definitions copied from proposed FC draft; FC metadata/import removed and answer(True) normalized to True"
+}

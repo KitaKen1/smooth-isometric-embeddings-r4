@@ -1,0 +1,38 @@
+{
+  "proof_repository": "KitaKen1/r4-verify-sandbox",
+  "proof_commit": "9a60c26cc7387128ce4150fefaf7778cad491504",
+  "publication_repository": "KitaKen1/smooth-isometric-embeddings-r4",
+  "public_proof_commit": null,
+  "public_proof_commit_status": "pending authorized publication; proof_commit records the historical sandbox source",
+  "proof_release_manifest_sha256": "a9c8265cdbc0091a21de2090369b1acc50acdc63a91c341a2fd69ff2f06dc13d",
+  "proof_source_lakefile_sha256": "52a9416abe1f9bc96381a64c2a6761fec4580f13440f687360b983f980d86a31",
+  "fc_repository": "google-deepmind/formal-conjectures",
+  "fc_base_commit": "8b3ec608d55559e384ad359b3c83f1c2112df448",
+  "fc_target_commit": null,
+  "fc_pr": null,
+  "fc_target_status": "local proposed draft; not submitted",
+  "fc_path": "FormalConjectures/Other/SmoothIsometricEmbeddingR4.lean",
+  "fc_draft_path": "FClikelean/SmoothIsometricEmbeddingR4.lean",
+  "fc_draft_sha256": "9d4cc2155d336f3a9a7aa478be419435ea9d2e1dc86591b534904046cbba5e83",
+  "fc_upstream_toolchain": "leanprover/lean4:v4.33.1",
+  "fc_upstream_mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "challenge_kind": "definitions copied from proposed FC draft; FC metadata/import removed and answer(True) normalized to True",
+  "answer_normalization": {
+    "from": "answer(True)",
+    "to": "True",
+    "note": "The default FC elaborator annotates the term True; the annotation is review metadata.",
+    "source": "https://github.com/google-deepmind/formal-conjectures/blob/8b3ec608d55559e384ad359b3c83f1c2112df448/FormalConjecturesUtil/Answer.lean"
+  },
+  "challenge_sha256": "29dd6fa9d3c0a1085fd5f05083340179907c5f88dde81bc5b0e701dccded3b85",
+  "solution_sha256": "1182abbda60a358b89a42ad51a9f6734a3e0a590da237958c2f8c88539dc9876",
+  "definitions_sha256": "2a9a68710e92cc2bf38ab0fe486164145a1d93ce8edb781d84f4af3f6c988fce",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "comparator_commit": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "lean4export_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "targets": [
+    "SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4"
+  ],
+  "fc_checkout_compatibility": "pending: upstream FC is Lean 4.33.1; this proof is Lean 4.34.1"
+}

@@ -109,7 +109,8 @@ hypotheses and estimates.
 | [lean/](lean/) | `v4.34.1` | Complete R4 proof, pinned source dependencies, FC-target definitions, Challenge and FCSolution |
 | [FClikelean/](FClikelean/) | FC reference base `v4.33.1`; compilation pending | FC-style statement and definitions |
 | [comparator/](comparator/) | Checks the proof with `v4.34.1` | Input pins, comparison scripts, runner preparation and verification guide |
-| [.github/workflows/](.github/workflows/) | GitHub-hosted Linux | Private/public Comparator verification workflow candidate |
+| [.github/workflows/](.github/workflows/) | GitHub-hosted Linux | Comparator verification workflow |
+| [ComparatorLog20261012/](ComparatorLog20261012/) | — | Records of the public Comparator run: original artifacts, receipts and GitHub run data |
 | [PDF/](PDF/) | — | Manuscript, editable TeX and existing timestamp evidence |
 
 The final entry point is [FinalTheorem.lean](lean/stage07/R4Initial/FinalTheorem.lean).
@@ -126,11 +127,11 @@ The release contains 2,494 proof and dependency modules, largely pinned upstream
 
 ### Lean Comparator check
 
-The original private CI checked the proof against its
-[challenge](lean/comparator/Challenge.lean) and accepted it using the same three axioms.
+On public `main`, Lean Comparator checked the proof against the
+[challenge](lean/Challenge.lean) and accepted it using the same three axioms.
 
 - **Within 90 days:** Check the CI results and artifacts ([see appendix](#certification-within-90-days-ci-results)).
-- **After 90 days:** Check the archived logs and artifacts, to be added after public CI succeeds ([see appendix](#certification-after-90-days-archive)).
+- **After 90 days:** Check the archived records and artifacts ([see appendix](#certification-after-90-days-archive)).
 
 ## Sources
 
@@ -171,24 +172,25 @@ Lean Comparator and GitHub CI enable the following:
 ### Certification Within 90 days: CI results
 
 Readers who want to inspect the verification results can check the Comparator execution
-and axiom audit in the CI logs within 90 days. In particular,
-`#print axioms R4Embedding.closedOrientableSurfaceEmbedding` reports the three axioms:
+and axiom audit in the CI logs within 90 days. In particular, `#print axioms` reports the
+three axioms for the FC target and for the original theorem:
 
 ```text
+'SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4' depends on axioms: [propext, Classical.choice, Quot.sound]
 'R4Embedding.closedOrientableSurfaceEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 
-The [original private R4 CI run](https://github.com/KitaKen1/r4-verify-sandbox/actions/runs/38134361617)
-passed; its logs and artifacts can be inspected on GitHub.
-The [FC-target private CI run](https://github.com/KitaKen1/r4-verify-sandbox/actions/runs/38195392399)
-also passed. The public main CI is pending.
+The [public CI run](https://github.com/KitaKen1/smooth-isometric-embeddings-r4/actions/runs/38223600783)
+on `main` passed on 12 October 2026 (tested commit `b8ddbd0`); its logs and artifacts can be
+inspected on GitHub until 10 January 2027.
 
 ### Certification After 90 days: archive
 
 After the [90-day retention period](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts)
 for CI logs and artifacts expires, readers can inspect the same results in the archive.
 Archived CI run records, logs, artifacts and checksums also allow file integrity checks.
-The archive link is pending public CI success.
+The archive is [ComparatorLog20261012/38223600783-attempt1/](ComparatorLog20261012/38223600783-attempt1/); see its
+[guide](ComparatorLog20261012/38223600783-attempt1/README.md).
 
 ### Reproduce the verification
 

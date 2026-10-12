@@ -1,0 +1,385 @@
+Running as unit: run-u17.service
+Building Challenge
+⚠ [2819/2820] Replayed Challenge
+warning: Challenge.lean:10:8: declaration uses `sorry`
+Build completed successfully (2820 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building FCSolution
+ℹ [3172/3308] Replayed R4CoS.Moise.PolygonalJordan
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:111:37: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:174:37: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:726:54: Try this:
+  [apply] abel_nf
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:731:73: Try this:
+  [apply] abel_nf
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:734:47: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1138:56: Try this:
+  [apply] abel_nf
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1154:75: Try this:
+  [apply] abel_nf
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1398:58: Try this:
+  [apply] abel_nf
+info: stage07/vendor/R4CoS/Moise/PolygonalJordan.lean:1648:2: Try this:
+  [apply] abel_nf
+ℹ [3211/3308] Replayed R4CoS.Moise.LocallyFiniteGraphPL
+info: stage07/vendor/R4CoS/Moise/LocallyFiniteGraphPL.lean:79:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3215/3308] Replayed R4CoS.Moise.PolygonalCrosscut
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:729:43: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:731:52: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:731:52: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:741:23: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:765:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:774:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalCrosscut.lean:1918:2: Try this:
+  [apply] abel_nf
+ℹ [3220/3308] Replayed R4CoS.Moise.PolygonalSchoenflies
+info: stage07/vendor/R4CoS/Moise/PolygonalSchoenflies.lean:203:35: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/Moise/PolygonalSchoenflies.lean:215:35: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3287/3579] Replayed R4CoS.FiniteCyclicP1Realization
+info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:909:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:960:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/FiniteCyclicP1Realization.lean:990:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [3301/3579] Replayed R4Initial.PresentationEuler
+warning: stage07/R4Initial/PresentationEuler.lean:748:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/PresentationEuler.lean:748:50: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: stage07/R4Initial/PresentationEuler.lean:981:60: `if_false` has been deprecated: Use `ite_false` instead
+warning: stage07/R4Initial/PresentationEuler.lean:993:37: `if_true` has been deprecated: Use `ite_true` instead
+warning: stage07/R4Initial/PresentationEuler.lean:1442:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [3302/3579] Replayed R4Initial.ModelPresentation
+warning: stage07/R4Initial/ModelPresentation.lean:138:40: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [typedFaces, List.mem_cons, List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3303/3579] Replayed R4Initial.ModelPresentationValid
+warning: stage07/R4Initial/ModelPresentationValid.lean:179:62: This simp argument is unused:
+  eq_self_iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [edgeOfDart, MEdge.outer.injEq, Fin.mk.injEq, true_and] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: stage07/R4Initial/ModelPresentationValid.lean:202:62: This simp argument is unused:
+  eq_self_iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [edgeOfDart, MEdge.outer.injEq, Fin.mk.injEq, true_and] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3338/3579] Replayed R4Initial.ModelFaceMap
+warning: stage07/R4Initial/ModelFaceMap.lean:44:28: Variable name `hi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: stage07/R4Initial/ModelFaceMap.lean:127:30: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:275:2: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:309:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: stage07/R4Initial/ModelFaceMap.lean:320:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: stage07/R4Initial/ModelFaceMap.lean:327:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: stage07/R4Initial/ModelFaceMap.lean:360:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: stage07/R4Initial/ModelFaceMap.lean:643:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:649:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:654:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:658:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelFaceMap.lean:711:23: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:718:23: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:740:33: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:740:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:754:33: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:754:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:768:33: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:768:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: stage07/R4Initial/ModelFaceMap.lean:1022:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: stage07/R4Initial/ModelFaceMap.lean:1029:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [3350/3579] Replayed R4CoS.TriangleCell
+info: stage07/vendor/R4CoS/TriangleCell.lean:300:27: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: stage07/vendor/R4CoS/TriangleCell.lean:316:27: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [3375/3579] Replayed R4Initial.NormalFormGenus
+warning: stage07/R4Initial/NormalFormGenus.lean:53:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: stage07/R4Initial/NormalFormGenus.lean:54:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3376/3579] Replayed R4Initial.ModelRealization
+warning: stage07/R4Initial/ModelRealization.lean:82:33: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: stage07/R4Initial/ModelRealization.lean:82:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: stage07/R4Initial/ModelRealization.lean:262:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelRealization.lean:262:63: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelRealization.lean:277:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelRealization.lean:288:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelRealization.lean:297:22: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelRealization.lean:314:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelRealization.lean:438:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: stage07/R4Initial/ModelRealization.lean:454:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: stage07/R4Initial/ModelRealization.lean:489:16: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [3379/3579] Replayed R4Embedding.PolynomialKernelArea
+warning: R4Embedding/PolynomialKernelArea.lean:47:12: This simp argument is unused:
+  Basis.prod_apply_inl_fst
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4314/4580] Replayed DifferentialGeometry.Topology.PlanarJordan.RegularCurve
+warning: models_upstream/DifferentialGeometry/Topology/PlanarJordan/RegularCurve.lean:59:4: Unused tactic linter: `all_goals (ext v; rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: models_upstream/DifferentialGeometry/Topology/PlanarJordan/RegularCurve.lean:59:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4560/4580] Replayed R4Initial.RelativeChartSmoothing
+warning: stage07/R4Initial/RelativeChartSmoothing.lean:259:0: automatically included section variable(s) unused in theorem `R4Embedding.exists_smooth_triangles_keeping`:
+  [T2Space N]
+  [IsManifold planeModel ∞ M]
+  [IsManifold planeModel ∞ N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space N] [IsManifold planeModel ∞ M] [IsManifold planeModel ∞ N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [10930/11419] Replayed R4Analytic.AnalyticAtlasC1Stability
+warning: analytic/R4Analytic/AnalyticAtlasC1Stability.lean:28:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_pair_chart_source`:
+  [IsManifold planeModel ∞ M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold planeModel ∞ M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: analytic/R4Analytic/AnalyticAtlasC1Stability.lean:46:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_chart_derivative_injective`:
+  [IsManifold planeModel ∞ M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold planeModel ∞ M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11188/11419] Replayed R4Analytic.AnalyticPhaseCoordinates
+warning: analytic/R4Analytic/AnalyticPhaseCoordinates.lean:26:0: automatically included section variable(s) unused in theorem `R4Embedding.analyticPhaseChart_symm`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11189/11419] Replayed R4Analytic.AnalyticClosedWeightCoordinates
+warning: analytic/R4Analytic/AnalyticClosedWeightCoordinates.lean:25:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_outer_domain_isOpen`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: analytic/R4Analytic/AnalyticClosedWeightCoordinates.lean:30:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_raw_germ_of_outer_one`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11190/11419] Replayed R4Analytic.AnalyticPreparedGeometry
+warning: analytic/R4Analytic/AnalyticPreparedGeometry.lean:20:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_chart_inverse_smooth`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11191/11419] Replayed R4Analytic.AnalyticSupportGeometry
+warning: analytic/R4Analytic/AnalyticSupportGeometry.lean:62:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_phase_profile_compact_neighborhood`:
+  [T2Space M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11193/11419] Replayed R4Analytic.AnalyticOrdinaryGeometry
+warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:21:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_native_coordinate_map`:
+  [IsManifold planeModel ∞ M]
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsManifold planeModel ∞ M] [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:72:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_exterior_domain_isOpen`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: analytic/R4Analytic/AnalyticOrdinaryGeometry.lean:81:0: automatically included section variable(s) unused in theorem `R4Embedding.analytic_exterior_domains_cover`:
+  [CompactSpace M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [11194/11419] Replayed R4Analytic.AnalyticPrimitiveAtlas
+warning: analytic/R4Analytic/AnalyticPrimitiveAtlas.lean:85:0: automatically included section variable(s) unused in theorem `R4Embedding.AnalyticPrimitivePatch.profiles_from_output`:
+  [T2Space M]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space M] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (11419 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, SmoothIsometricEmbeddingR4.smooth_isometric_embedding_R4, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from FCSolution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 11min 42.769s
+CPU time consumed: 11min 24.396s
+Memory peak: 3.8M
+Memory swap peak: 0B
