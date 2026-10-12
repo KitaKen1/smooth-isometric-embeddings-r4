@@ -1,5 +1,5 @@
 {
-  "assembled_at_utc": "2026-10-12T08:13:43.790580+00:00",
+  "assembled_at_utc": "2026-10-12T08:50:12.588686+00:00",
   "purpose": "Publication of the Lean proof, the FC-style target and the verification inputs on main; the public main CI has not run yet.",
   "publication_repository": "https://github.com/KitaKen1/smooth-isometric-embeddings-r4",
   "verified_source_commit": "9a60c26cc7387128ce4150fefaf7778cad491504",
@@ -18,7 +18,7 @@
     "PDF/smooth-isometric-embeddings-r4.pdf": "815a69507ee015f84dfa79b0f07b77a8784e8ae553fd0515267df17bbcf0248c",
     "PDF/smooth-isometric-embeddings-r4.pdf.ots": "ebd24e91d39ece7b30834a4b2f1f7f12febe9c140dacc72a5d432fba9f1e6f76",
     "PDF/smooth-isometric-embeddings-r4.tex": "504c3a323cb6f537562ba7477466f10ac32b49c11169956203c7d8e8b1e10492",
-    "README.md": "ed385a2bceb263e4ca08ff8032145ce6191ceae84fea04ee9dd33706f54cb91a",
+    "README.md": "5c72c22dcb11ce968c9f3c6378bcc9331e04612373d21000c2887d8a2bc347e1",
     "THIRD_PARTY.md": "85b0318f0fb2bbbc57df1bdfc95c9276a811011b9857faf103e8b2fa85917e4f",
     "comparator/LocalCompare.lean": "c583f894fc2cd78445cdda0d765262c7f2b2fd1af57183ac52b3cc7beefac66f",
     "comparator/README.md": "64fa3c36951e0906498964057c5c778e5f732b7ce843a8ddcba16d651c188d08",

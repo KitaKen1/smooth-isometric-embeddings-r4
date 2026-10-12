@@ -49,36 +49,36 @@ After scaling, obtain an embedding $F^0$ with $\gamma^0=\gamma(F^0)<g$.
 **2. Prepare a finite sequence of metric corrections.** Uniform metric preparation
 decomposes the positive deficit into smooth rank-one tensors supported on coordinate disks:
 
-$$
+```math
 \gamma^j=\gamma^0+\sum_{i=1}^j a_i^2\,dx_i\otimes dx_i,
 \qquad \gamma^K=g.
-$$
+```
 
 The phases and sufficiently small increments are chosen so that
-$\operatorname{Hess}_{\gamma^{j-1}}x_j(\partial_{y_j},\partial_{y_j})>0$
+$`\mathrm{Hess}_{\gamma^{j-1}}x_j(\partial_{y_j},\partial_{y_j})>0`$
 on each disk closure. Uniformity over the spherical preparation family allows the
 phases and boundary curves to be fixed before the final initial map is chosen.
 The prepared map satisfies the normal and boundary-crossing conditions needed for
 the primitive construction.
 
 **3. Realize one correction exactly.** For the current map $F$, set
-$P_p=\operatorname{span}(F_y(p),F_{yy}(p))^\perp$ and $v=\pi_PF_x$.
+$`P_p=\mathrm{span}(F_y(p),F_{yy}(p))^\perp`$ and $v=\pi_PF_x$.
 Choose a periodic velocity loop $V$ in $P$ with mean $v$ and
 $|V|^2=|v|^2+a^2$. Replacing the projected velocity $v$ by $V(p,x/z)$
-adds the desired $a^2\,dx\otimes dx$ term at leading order. The exact realization
+adds the desired $`a^2\,dx\otimes dx`$ term at leading order. The exact realization
 theorem supplies smooth maps $f_z$ satisfying
 
-$$
+```math
 f_z^*\delta_4=\gamma(F)+a^2\,dx\otimes dx,
 \qquad df_z-dF=W_z+R_z,
-$$
+```
 
 where $W_z$ takes values in $P$, $f_z\to F$ in $C^0$, and
-$\|R_z\|_{C^0}\to0$ as $z\downarrow0$. Outside the disk the maps converge in $C^2$.
+$`\|R_z\|_{C^0}\to0`$ as $z\downarrow0$. Outside the disk the maps converge in $C^2$.
 The fixed metric identity bounds $df_z$ uniformly.
 
 **4. Preserve injectivity.** The positive phase Hessian gives
-$\Gamma^x_{yy}=-\operatorname{Hess}_{\gamma(F)}x(\partial_y,\partial_y)\ne0$.
+$`\Gamma^x_{yy}=-\mathrm{Hess}_{\gamma(F)}x(\partial_y,\partial_y)\ne0`$.
 The Gauss decomposition of $F_{yy}$ then shows that $P_p$ is complementary to
 $dF_p(T_pM)$. In local coordinates choose a linear map $L_p:\mathbb R^4\to\mathbb R^2$
 that kills $P_p$ and satisfies $L_p dF_p=\mathrm{id}$. Continuity of the transverse
